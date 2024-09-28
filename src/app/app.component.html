@@ -1,0 +1,24 @@
+<app-header />
+
+<main>
+  <div id="dashboard">
+    <app-dashboard-comm
+      [image]="{ image: 'status.png', alt: 'a png of network' }"
+      [title]="'server status'"
+    >
+      <app-server />
+    </app-dashboard-comm>
+    <app-dashboard-comm
+      [image]="{ image: 'globe.png', alt: 'a png of network' }"
+      [title]="'Traffic'"
+    >
+      <app-traffic />
+    </app-dashboard-comm>
+    <app-dashboard-comm
+      [image]="{ image: 'list.png', alt: 'a png of network' }"
+      [title]="'Support ticket'"
+    >
+      <app-support></app-support>
+    </app-dashboard-comm>
+  </div>
+</main>
